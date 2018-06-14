@@ -76,31 +76,6 @@ public class Setting_my_Task extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent2);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 break;
-            case R.id.fabiao:
-                Intent intent3 = new Intent(this, Task_ShuoMing.class);
-                startActivity(intent3);
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                break;
-            case R.id.share:
-                Intent intent4 = new Intent(this, Task_ShuoMing.class);
-                startActivity(intent4);
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                break;
-            case R.id.xinshang:
-                Intent intent5 = new Intent(this, Task_ShuoMing.class);
-                startActivity(intent5);
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                break;
-            case R.id.read_text:
-                Intent intent6 = new Intent(this, Task_ShuoMing.class);
-                startActivity(intent6);
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                break;
-            case R.id.read_news:
-                Intent intent7 = new Intent(this, Task_ShuoMing.class);
-                startActivity(intent7);
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                break;
         }
     }
 

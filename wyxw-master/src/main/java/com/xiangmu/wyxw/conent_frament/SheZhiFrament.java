@@ -48,7 +48,7 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
     String emailAddress;
     View view;
     //判断登录的标记
-    static boolean flag;
+    static boolean flag = true;
     private String user_name;
     private String pic_path;
     @Nullable
@@ -254,21 +254,10 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                     getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 }
                 break;
-            // TODO: 2015/11/18 我的消息
-            case R.id.myMessage:
-
-                break;
-            case R.id.messageText:
-
-                break;
-            // TODO: 2015/11/18 金币商城
             case R.id.goldMall:
                 Intent intent17 = new Intent(getActivity(), Setting_glodmall.class);
                 startActivity(intent17);
                 getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                break;
-            case R.id.goldMallText:
-
                 break;
             case R.id.myTask:
                 //获取数据库对应的数据
@@ -282,24 +271,6 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                     getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 }
                 break;
-            case R.id.myTaskText:
-
-                break;
-            // TODO: 2015/11/18 我的钱包
-            case R.id.myWallet:
-
-                break;
-            case R.id.myWalletText:
-
-                break;
-            // TODO: 2015/11/18 我的邮箱
-            case R.id.mymailbox:
-
-                break;
-            case R.id.mymailboxText:
-
-                break;
-
         }
     }
     public static Handler handle=new Handler(){
@@ -313,7 +284,7 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                     goldNumber.setVisibility(View.VISIBLE);
                     jinbiCount.setVisibility(View.GONE);
                     picture.setImageResource(R.mipmap.biz_tie_user_avater_default_common);
-                    flag=false;
+                    //flag=false;
                     break;
                 case 2:
                     Bitmap bp= (Bitmap) msg.obj;

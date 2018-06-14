@@ -39,12 +39,6 @@ public class Setting_GlodPage extends AppCompatActivity implements View.OnClickL
                 overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
                 finish();
                 break;
-            case R.id.zhuanjinbi:
-
-                break;
-            case R.id.huajinbi:
-
-                break;
         }
     }
 }
