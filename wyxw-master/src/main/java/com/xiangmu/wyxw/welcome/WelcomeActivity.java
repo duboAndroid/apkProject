@@ -1,10 +1,8 @@
 package com.xiangmu.wyxw.welcome;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -25,7 +23,7 @@ public class WelcomeActivity extends AppCompatActivity implements ScrollViewList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        boolean isfirst = getSharedPreferences("welcome", MODE_PRIVATE).getBoolean("isfirst", true);
+        boolean isfirst = getSharedPreferences(/*"welcome"*/"", MODE_PRIVATE).getBoolean("isfirst", true);
         initView();
         if (isfirst) {
             setView();

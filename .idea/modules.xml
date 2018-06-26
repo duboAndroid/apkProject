@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/apkProject.iml" filepath="$PROJECT_DIR$/apkProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/wyxw-master/wyxw-master.iml" filepath="$PROJECT_DIR$/wyxw-master/wyxw-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xinWen.iml" filepath="$PROJECT_DIR$/xinWen.iml" />
     </modules>
   </component>
 </project>
