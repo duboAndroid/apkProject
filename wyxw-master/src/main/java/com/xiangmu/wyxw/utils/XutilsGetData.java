@@ -18,7 +18,6 @@ import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.xiangmu.wyxw.CostomProgressDialog.CustomProgressDialog;
 import com.xiangmu.wyxw.R;
-import com.xiangmu.wyxw.activitys.YueDuDetialActivity;
 
 /**
  * Created by Administrator on 2015/11/10.
@@ -29,8 +28,8 @@ public class XutilsGetData {
 
     private HttpHandler<String> hand;
     private HttpUtils http;
-    private  String data = null;
-    private  CallBackHttp callbackhttp;
+    private String data = null;
+    private CallBackHttp callbackhttp;
 //    static CustomProgressDialog dialog = null;
     //网络请求string数据
     public  void xUtilsHttp(final Context context, final String url, CallBackHttp callback, final boolean isprogressdialog) {

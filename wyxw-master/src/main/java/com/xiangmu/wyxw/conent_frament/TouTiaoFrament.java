@@ -416,7 +416,7 @@ public class TouTiaoFrament extends Fragment {
                 Intent intentzhibo = new Intent(getContext(), WebViewActivity.class);
                 intentzhibo.putExtra("xinwendata", xinWenXi);
                 startActivity(intentzhibo);
-                getActivity().overridePendingTransition(R.anim.xinwen_inactivity, R.anim.xinwen_inactivity);
+                //getActivity().overridePendingTransition(R.anim.xinwen_inactivity, R.anim.xinwen_inactivity);
                 break;
             case XinWen_adapter.type_duotu:
                 LogUtils.e("xinwenadapter", "type_duotu==" + bujutype);

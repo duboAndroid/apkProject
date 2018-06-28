@@ -328,8 +328,7 @@ public class ShiTingFrament extends Fragment {
             VideoSuperPlayer mSuperVideoPlayer;
             int position;
 
-            public MyOnclick(String url, VideoSuperPlayer mSuperVideoPlayer,
-                             int position) {
+            public MyOnclick(String url, VideoSuperPlayer mSuperVideoPlayer,int position) {
                 this.url = url;
                 this.position = position;
                 this.mSuperVideoPlayer = mSuperVideoPlayer;

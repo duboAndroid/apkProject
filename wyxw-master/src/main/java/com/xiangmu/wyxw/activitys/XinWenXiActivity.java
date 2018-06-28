@@ -135,9 +135,7 @@ public class XinWenXiActivity extends AppCompatActivity {
 
         imagePager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
 
             @Override
             public void onPageSelected(int position) {
@@ -146,9 +144,7 @@ public class XinWenXiActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
+            public void onPageScrollStateChanged(int state) {}
         });
         ImagePagerAdapter imagePagerAdapter = new ImagePagerAdapter();
         imagePager.setAdapter(imagePagerAdapter);
@@ -171,7 +167,6 @@ public class XinWenXiActivity extends AppCompatActivity {
             if (position == 0) {//设置第一次初始化内容
                 xinwencontent.setText(photoslist.get(0).getPhotosList().get(position).getText());
             }
-
             return photoslist.get(0).getPhotosList().get(position).getImg();
         }
 
@@ -216,8 +211,6 @@ public class XinWenXiActivity extends AppCompatActivity {
                 Intent intent = new Intent(XinWenXiActivity.this, PictureActivity.class);
                 intent.putExtra("path", s);
                 startActivity(intent);
-
-
             }
         });
         //改变字体按钮
@@ -249,7 +242,6 @@ public class XinWenXiActivity extends AppCompatActivity {
         super.onDestroy();
         xutilsGetData.XutilsClose();
     }
-
 
     public void initDate() {
         String url = xinWenXiData.getUrl();//获得详细页面的url      //分享用
@@ -297,6 +289,4 @@ public class XinWenXiActivity extends AppCompatActivity {
         cursor.close();
         writableDatabase.close();
     }
-
-    ;
 }

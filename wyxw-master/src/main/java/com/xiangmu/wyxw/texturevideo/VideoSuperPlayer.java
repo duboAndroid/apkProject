@@ -27,8 +27,7 @@ import java.util.TimerTask;
 /**
  * Created by Administrator on 2015/11/15.
  */
-public class VideoSuperPlayer extends RelativeLayout implements
-        TextureView.SurfaceTextureListener {
+public class VideoSuperPlayer extends RelativeLayout implements TextureView.SurfaceTextureListener {
     private final int TIME_SHOW_CONTROLLER = 3000;
     private final int TIME_UPDATE_PLAY_TIME = 1000;
 
@@ -77,8 +76,7 @@ public class VideoSuperPlayer extends RelativeLayout implements
             if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
                 showOrHideController();
             }
-            return mCurrPageType == VideoMediaController.PageType.EXPAND ? true
-                    : false;
+            return mCurrPageType == VideoMediaController.PageType.EXPAND ? true : false;
         }
     };
 
